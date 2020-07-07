@@ -10,7 +10,7 @@ const forecast = (longitude, latitude, callback)=>{
             callback("Unable to find weatherservice location", undefined)    
         }else{
             callback(undefined,
-                "The weather is " + body.current.weather_descriptions[0] + " . The temperature is " + body.current.temperature + " and it fells like " + body.current.feelslike
+                "The weather is " + body.current.weather_descriptions[0] + " . The temperature is " + body.current.temperature + " and it fells like " + body.current.feelslike + ". The humidity is " + body.current.humidity + "%."
             )
         }
     })
